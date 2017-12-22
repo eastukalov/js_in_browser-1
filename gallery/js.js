@@ -4,15 +4,15 @@ let arrImg = ['i/breuer-building.jpg',
   'i/guggenheim-museum.jpg',
   'i/headquarters.jpg',
   'i/IAC.jpg',
-  'i/new-museum.jpg',
-  'i/spinner.gif'
+  'i/new-museum.jpg'
 ];
 
-let i = 5;
+let i = 0;
 
 let img = document.getElementById('currentPhoto');
 let prevPhoto = document.getElementById('prevPhoto');
 let nextPhoto = document.getElementById('nextPhoto');
+img.src = arrImg[i];
 
 nextPhoto.onclick = function () {
   i++;
